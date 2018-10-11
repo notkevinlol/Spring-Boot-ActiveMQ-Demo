@@ -17,6 +17,6 @@ public class Application {
 
     @JmsListener(destination = "inboundQueue")
     public void receive(String message) {
-        System.out.println("Hello World");
+        System.out.println(String.format("The message is: %s", message));
     }
 }
